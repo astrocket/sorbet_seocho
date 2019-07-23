@@ -477,3 +477,7 @@ end
 
 
 ## Q/A 시간
+
+## References
+[sorbet](https://sorbet.org/)
+[sorbet-rails](https://github.com/chanzuckerberg/sorbet-rails)
