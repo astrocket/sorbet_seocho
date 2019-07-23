@@ -442,7 +442,18 @@ gem 'sorbet-rails'
 아래 rake task 를 실행하면 model 에 관련된 기본적인 relation, aasm, active_record method 같은 것들의 타입 인터페이스를 만들어줍니다. 쉽게 생각하면 레일즈 및 라이브러리가 자동으로 해주는 것들의 타입선언 스캐폴드라고 보면됩니다. (모델에 직접 정의한 `booker_name_i18n` 에 대해서는 타입선언이 자동작성되지 않음)
 
 ```bash
-rake rails_rbi:models 
+rake rails_rbi:models
+```
+
+```ruby
+# 자동으로 생성된 active_record / relation 관련 메서드들과 타입선언 샘플
+...
+sig { returns(T.nilable(DateTime)) }
+def checkin(); end
+...
+sig { returns(::Booker) }
+def booker(); end
+...
 ```
 
 그 다음에 `booker_name_i18n` 먼저 선언한 이 메서드의 input 인 `country_code` 의 타입을 `Symbol` 로 강제하기 위해서 sorbet 경로 아래에 생성된 `reservations.rbi ` 에 아래처럼 코드를 추가해 줍니다.
@@ -459,12 +470,10 @@ end
 ...
 ```
 
-이 상태에서 `srb tc` 로 타입체크를 해주면 reservation.name_i18n 에서 reservation 이 nil 일 때 발생가능한 에러를 detect 하게 됩니다. reservation 이 안전하다고 가정하고 T.must 를 사용하거나  &. 로 nil safety 를 보장시켜주도록 코드를 수정합니다.
+이 상태에서 `srb tc` 로 타입체크를 해주면 `reservation.name_i18n` 에서 `reservation` 이 `nil` 일 때 발생가능한 에러를 detect 하게 됩니다. `reservation` 이 안전하다고 가정하고 `T.must` 를 사용하거나  `&.` 로 nil safety 를 보장시켜주도록 코드를 수정합니다.
 
 타 개발자에 의해서 `:ko` 로 들어오던 국가코드가 `"ko"` 로 들어와서 번역 API 와의 호환성이 문제가 생기는 상황을 가정해보고 `:ko` 대신 `"ko"` 를 넣어보고 `srb tc` 로 정적분석을 해주면 우리가 원하던 타입에러가 발생합니다.
 
 
 
 ## Q/A 시간
-
-
