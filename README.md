@@ -73,7 +73,7 @@ No errors! Great job.
    - `strict` : + 모든 메서드에 `signature` 가 정의 / 사용되는 모든 변수가 `type` 갖도록
    - `strong` : + `T.untyped` (타입이 없는 타입)도 허용하지 않는 단계. rbi 파일 이외에 잘 쓸일은 없음
    - `#typed: false` 이더라도 `#typed: true` 인 파일이 부르면 타입 체크가 이루어짐
-
+   
    ```ruby
    # typed: true
    extend T::Sig
@@ -114,6 +114,24 @@ No errors! Great job.
    Caller: example.rb:11
    Definition: example.rb:6
    ...
+   ```
+
+3. T.unsafe (MetaProgrammed Methods)
+
+   - 메타프로그래밍으로 생성한 메서드의 호출은 static checking 에서 잡아낼 수가 없다.
+   - 런타임에서 메서드가 동적으로 생성되기 때문에 그럼.
+   - 이런 메서드들은 `T.unsafe` 로 묶어서 Sorbet 이 `T.untyped` 타입으로 간주하도록 해주어야 타입에러가 안난다.
+
+   ```ruby
+   define_singleton_method(:foo) { puts 'A.foo'; true }
+   
+   if foo # => Method `foo` does not exist on `T.class_of(A)`
+     puts 'succeeded'
+   end
+   
+   if T.unsafe(self).foo # ok
+     puts 'succeeded'
+   end
    ```
 
    
