@@ -82,7 +82,7 @@ class Reservation
   def booker=(value); end
 
   sig { params(country_code: Symbol).returns(String) }
-  def name_i18n(country_code); end
+  def booker_name_i18n(country_code); end
 end
 
 module Reservation::ModelRelationShared

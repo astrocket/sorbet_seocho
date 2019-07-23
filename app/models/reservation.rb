@@ -3,7 +3,7 @@ class Reservation < ApplicationRecord
 
   belongs_to :booker
 
-  def name_i18n(country_code)
+  def booker_name_i18n(country_code)
     translate_api(booker.name, country_code)
   end
 

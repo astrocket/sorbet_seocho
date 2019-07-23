@@ -2,7 +2,7 @@
 class ReservationsController < ApplicationController
   def index
     reservation = Reservation.first
-    name = reservation&.name_i18n(:ko)
+    name = reservation&.booker_name_i18n(:ko)
 
     render json: name
   end
