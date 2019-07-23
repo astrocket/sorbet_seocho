@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bb3ad658-1feb-4f29-b07e-a1f4b8c3cc5d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/reservations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/reservations_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/reservation.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/reservation.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sorbet/rails-rbi/models/reservation.rbi" beforeDir="false" afterPath="$PROJECT_DIR$/sorbet/rails-rbi/models/reservation.rbi" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -26,8 +23,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="7990">
-                <caret line="470" selection-start-line="470" selection-end-line="470" />
+              <first_editor relative-caret-position="248">
+                <caret line="362" lean-forward="true" selection-start-line="362" selection-end-line="362" />
               </first_editor>
               <second_editor />
             </state>
@@ -311,15 +308,16 @@
       <option name="presentableId" value="Default" />
       <updated>1563800116523</updated>
       <workItem from="1563800121672" duration="2486000" />
-      <workItem from="1563883359217" duration="3394000" />
+      <workItem from="1563883359217" duration="3635000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5880000" />
+    <option name="totallyTimeSpent" value="6121000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="223" y="23" width="1235" height="1149" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.103939645" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -427,8 +425,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="7990">
-            <caret line="470" selection-start-line="470" selection-end-line="470" />
+          <first_editor relative-caret-position="248">
+            <caret line="362" lean-forward="true" selection-start-line="362" selection-end-line="362" />
           </first_editor>
           <second_editor />
         </state>
