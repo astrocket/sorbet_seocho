@@ -116,7 +116,7 @@ No errors! Great job.
    ...
    ```
 
-3. T.unsafe (MetaProgrammed Methods)
++ T.unsafe (MetaProgrammed Methods)
 
    - 메타프로그래밍으로 생성한 메서드의 호출은 static checking 에서 잡아낼 수가 없다.
    - 런타임에서 메서드가 동적으로 생성되기 때문에 그럼.
