@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb3ad658-1feb-4f29-b07e-a1f4b8c3cc5d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="bb3ad658-1feb-4f29-b07e-a1f4b8c3cc5d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/log/" />
@@ -23,8 +21,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="55">
-                <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+              <first_editor relative-caret-position="598">
+                <caret line="108" column="28" lean-forward="true" selection-start-line="108" selection-start-column="28" selection-end-line="108" selection-end-column="28" />
               </first_editor>
               <second_editor />
             </state>
@@ -54,7 +52,6 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="223" />
     <option name="y" value="23" />
     <option name="width" value="1235" />
     <option name="height" value="1149" />
@@ -308,12 +305,12 @@
       <option name="presentableId" value="Default" />
       <updated>1563800116523</updated>
       <workItem from="1563800121672" duration="2486000" />
-      <workItem from="1563883359217" duration="4115000" />
+      <workItem from="1563883359217" duration="4695000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6601000" />
+    <option name="totallyTimeSpent" value="7181000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="223" y="23" width="1235" height="1149" extended-state="0" />
@@ -425,8 +422,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="55">
-            <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+          <first_editor relative-caret-position="598">
+            <caret line="108" column="28" lean-forward="true" selection-start-line="108" selection-start-column="28" selection-end-line="108" selection-end-column="28" />
           </first_editor>
           <second_editor />
         </state>

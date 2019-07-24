@@ -10,7 +10,7 @@
 
 ```text
 Stripe 백엔드 코드 대부분이 ruby 로 개발(but rails X)
-
+(페이스북에서 hhvm 만들던 분이 sorbet 프로젝트 리더)
 코드 베이스가 거대한 monolith에 가까운 구조.
 -> 계속해서 기존 코드에 추가하는 방식
 
