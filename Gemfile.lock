@@ -56,8 +56,8 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.1, >= 2.1.4)
-    addressable (2.6.0)
-      public_suffix (>= 2.0.2, < 4.0)
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
     bindex (0.8.1)
     bootsnap (1.4.4)
       msgpack (~> 1.0)
@@ -103,7 +103,7 @@ GEM
     nio4r (2.4.0)
     nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
-    public_suffix (3.1.1)
+    public_suffix (5.0.0)
     puma (3.12.1)
     rack (2.0.7)
     rack-proxy (0.6.5)
@@ -161,7 +161,7 @@ GEM
       sorbet-static (= 0.4.4486)
     sorbet-rails (0.4.0)
     sorbet-runtime (0.4.4486)
-    sorbet-static (0.4.4486-universal-darwin-14)
+    sorbet-static (0.4.4486-x86_64-linux)
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -203,7 +203,7 @@ GEM
     zeitwerk (2.1.9)
 
 PLATFORMS
-  ruby
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap (>= 1.4.2)
